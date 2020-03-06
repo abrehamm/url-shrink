@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shrink!</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1>
+        <form action="" method="POST" class="form-inline my-4">
+            <label for="url" class="sr-only"></label>
+            <input type="url" name="url" placeholder="URL" class=" form-control col mr-2">
+            <button type="submit" class=" btn btn-primary">Shorten</button>
+        </form>
+
+        <table class=" table table-striped table-responsive">
+            <thead>
+                <tr>
+                    <th>Full URL</th>
+                    <th>Short URL</th>
+                    <th>Views</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% urls.forEach(element => { %>
+                <tr>
+                    <td><%= element.full %> </td>
+                    <td><%= element.short %> </td>
+                    <td><%= element.views %></td>
+                </tr>
+                <% }) %>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
