@@ -13,7 +13,7 @@
     "bootstrap": "^4.4.1",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
-    "mongoose": "^5.7.13",
+    "mongoose": "^5.13.20",
     "shortid": "^2.2.15"
   }
 }
